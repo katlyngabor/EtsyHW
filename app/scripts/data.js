@@ -1,6 +1,3 @@
-data.js
-
-
 var etsyitems = [{
     "count": 50100,
     "results": [{
