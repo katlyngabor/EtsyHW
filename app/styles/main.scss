@@ -18,3 +18,17 @@
     @include footer-stuff
 }
 
+.item{
+	width:300px;
+	display:inline-block;
+	border-style: solid;
+	border-size: 1px;
+	border-color: black;
+}
+.item:hover{
+	
+}
+
+div.images img {
+	width:125px;
+}
