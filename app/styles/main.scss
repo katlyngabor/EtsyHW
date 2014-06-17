@@ -3,6 +3,11 @@
 
 @mixin footer-stuff {
     font-size:8px;
+
+}
+
+header {
+	background-color:white;
 }
 
 .title{
@@ -11,10 +16,6 @@
 
 .tagline{
     font-size:15px;
-}
-
-.my-blog,.copyright {
-    @include footer-stuff
 }
 
 .my-blog{
@@ -26,8 +27,9 @@
 
 
 .main-body { 
-	background-color:#f5f5f2;
-	margin-left:60px;
+	background-color:#e6e6df;
+	padding-left:60px;
+	float:left;
 }
 
 .item{
@@ -39,9 +41,9 @@
 	font-size: 8px;
 	margin:10px;
 	overflow:hidden;
-	height:130px;
-	text-align:center;
+	height:130px;	
 	float:left;
+	background-color:white;	
 }
 .item:hover{
 	
@@ -49,10 +51,16 @@
 
 div.images img {
 	width:125px;
+	padding:5px;
+}
+
+.my-blog,.copyright {
+    @include footer-stuff
 }
 
 footer{
 	clear:both;
 	width:500px;
 	margin-left:100px;
+	margin-bottom:30px;
 }
