@@ -3,6 +3,7 @@
 
 @mixin footer-stuff {
     font-size:8px;
+    color:#d16c64;
 
 }
 
@@ -12,14 +13,20 @@ header {
 
 .title{
     font-size:30px;
+    color:#cf5829;
+    margin-left:50px;
 }
 
 .tagline{
     font-size:15px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color:#54acc7;
 }
 
 .my-blog{
 	float:right;
+	text-decoration:none;
+
 }
 .copyright{
 	float:left;
@@ -38,24 +45,44 @@ header {
 	border-style: solid;
 	border-width:1px;
 	border-color:white;
-	font-size: 8px;
+	font-size: 6px;
+	font-family: 'Arial';
 	margin:10px;
 	overflow:hidden;
 	height:130px;	
 	float:left;
 	background-color:white;	
+	color:#4d443d;
+
 }
 .item:hover{
+	border-style:groove;
 	
 }
 
+.currency_code{
+	float:right;
+}
+
+.price {
+	float:right;
+}
+
+
+
 div.images img {
 	width:125px;
-	padding:5px;
+	padding-right: 2px;
+	padding-left:3px;
+
 }
 
 .my-blog,.copyright {
     @include footer-stuff
+}
+
+a:link {
+	text-decoration:none;
 }
 
 footer{
